@@ -12,4 +12,7 @@ class Applicant extends Model
     public function ProfilePicture(){
         return $this->hasOne(ProfilePicture::class);
     }
+    public function Education(){
+        return $this->hasmany(Education::class);
+    }
 }

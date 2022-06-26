@@ -9,32 +9,25 @@
   <div class="w3-container w3-brown">
    
   </div>
-  <form class="w3-container" action="Addapplicant" method="POST"  enctype="multipart/form-data">
+  <form class="w3-container" action="addeducation" method="POST">
     @csrf
     <p>      
-    <label class="w3-text-brown"><b>Enter Your Name</b></label>
-    <input class="w3-input w3-border w3-sand" name="name" type="text"></p>
+    <label class="w3-text-brown"><b>Enter Your Degree</b></label>
+    <input class="w3-input w3-border w3-sand" name="degree" type="text"></p>
     <p>      
-    <label class="w3-text-brown"><b>Enter Your Email</b></label>
-    <input class="w3-input w3-border w3-sand" name="email" type="text"></p>
+    <label class="w3-text-brown"><b>Enter Your Grade</b></label>
+    <input class="w3-input w3-border w3-sand" name="grade" type="text"></p>
     <p>      
-        <label class="w3-text-brown"><b>Enter Your Mobile Number</b></label>
-        <input class="w3-input w3-border w3-sand" name="mobile_number" type="text"></p>
+        <label class="w3-text-brown"><b>Enter Your Institution Name</b></label>
+        <input class="w3-input w3-border w3-sand" name="ins_name" type="text"></p>
     <p>      
-        <label class="w3-text-brown"><b>Enter Your Password</b></label>
-    <input class="w3-input w3-border w3-sand" name="password" type="text"></p>
-    <p>      
-        <label class="w3-text-brown"><b>Enter Your Present Address</b></label>
-        <input class="w3-input w3-border w3-sand" name="pre_address" type="text"></p>
-        <p>      
-            <label class="w3-text-brown"><b>Enter Your Parmanent Address</b></label>
-            <input class="w3-input w3-border w3-sand" name="par_address" type="text"></p>
-            <p>      
-              <label class="w3-text-brown"><b>Enter Your Parmanent Address</b></label>
-              <input class="w3-input w3-border w3-sand" name="image" type="file"></p>
+        <label class="w3-text-brown"><b>Enter Your PassingYear</b></label>
+    <input class="w3-input w3-border w3-sand" name="p_year" type="text"></p>
+   
     <p>
     <button class="w3-btn w3-brown">Register</button></p>
   </form>
+  {{session('logid')}}
 </div>
 
 </body>
