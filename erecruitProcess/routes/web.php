@@ -26,4 +26,6 @@ Route::post('checkLogIn',"App\Http\Controllers\LogIN@LoginCheack");
 
 /*Add Education Routing*/
 
-Route::get('education',"App\Http\Controllers\educationController@GetEducation");
+
+Route::get('education',"App\Http\Controllers\EducationController@GetEducation");
+Route::post('addeducation',"App\Http\Controllers\EducationController@addEducation");

@@ -20,7 +20,7 @@ class LogIN extends Controller
         if($obj){
             if(Hash::check($req->password,$obj->applicantPassword)){
                 $req->session()->put('logid',$obj->id);
-                $data=$req->session()->put('username',$obj->name);
+                //$data=$req->session()->put('username',$obj->name);
              return view('Applicant_DeshBoard');
             }
             else{
