@@ -19,6 +19,8 @@ Route::get('/aaaaa', function () {
 Route::get("connect","App\Http\Controllers\ApplicantController@Connection");
 Route::get('RegistrationPage',"App\Http\Controllers\ApplicantController@AddApplicantInputPage");
 Route::post('Addapplicant',"App\Http\Controllers\ApplicantController@AddApplicant");
+Route::get('edit/{id}',"App\Http\Controllers\ApplicantController@applicantEditProfile");
+Route::post('/edit',"App\Http\Controllers\ApplicantController@applicantUpdateProfile");
 
 /*Log In Routing*/
 Route::get('/',"App\Http\Controllers\LogIN@GetLogIn");

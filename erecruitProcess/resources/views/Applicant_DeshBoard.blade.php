@@ -42,6 +42,9 @@ li a:hover:not(.active) {
   <li><a href="#news">Profile</a></li>
   <li><a href="education">Education</a></li>
   <li><a href="#about">About</a></li>
+  <li><a href="#">{{session('username')}}</a></li>
+  <li><a href="{{"edit/" .session('logid')}}">Edit Profile</a></li>
+
 </ul>
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
