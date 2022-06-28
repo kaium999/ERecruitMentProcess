@@ -39,12 +39,11 @@ li a:hover:not(.active) {
 
 <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Profile</a></li>
-  <li><a href="education">Education</a></li>
-  <li><a href="alljobsee">See Job</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="seePostJOb">See Post Job</a></li>
+  <li><a href="jobadd">Job Post</a></li>
   <li><a href="#">{{session('username')}}</a></li>
   <li><a href="{{"edit/" .session('logid')}}">Edit Profile</a></li>
+  <li><a href="logout">Logout</a></li>
 
 </ul>
 
