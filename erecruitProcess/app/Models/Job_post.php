@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Job_post extends Model
 {
     use HasFactory;
+    public function Employee(){
+        return $this->belongsto(Employee::class);
+    }
 }

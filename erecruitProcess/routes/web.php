@@ -31,3 +31,12 @@ Route::post('checkLogIn',"App\Http\Controllers\LogIN@LoginCheack");
 
 Route::get('education',"App\Http\Controllers\EducationController@GetEducation");
 Route::post('addeducation',"App\Http\Controllers\EducationController@addEducation");
+/*Employee Log In Routing*/
+Route::get('logIngetpage',"App\Http\Controllers\EmployeeeLogin@LogInpageGet");
+Route::post('checkLogInE',"App\Http\Controllers\EmployeeeLogin@LogInCheckE");
+Route::get('logout',"App\Http\Controllers\EmployeeeLogin@logOut");
+/*Add Job Routing*/
+Route::get('jobadd',"App\Http\Controllers\JobPostController@jobAddPage");
+Route::post('jobsave',"App\Http\Controllers\JobPostController@jobsave");
+Route::get('seePostJOb',"App\Http\Controllers\JobPostController@SeeJobPost");
+Route::get('alljobsee',"App\Http\Controllers\JobPostController@AllpostShow");
