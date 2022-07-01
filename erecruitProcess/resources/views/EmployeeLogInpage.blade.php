@@ -7,7 +7,7 @@
 <body>    
     <h2>Employee Login Page</h2><br>    
     <div class="login">    
-    <form id="login" method="POST" action="checkLogIn">
+    <form id="login" method="POST" action="checkLogInE">
         @csrf    
         <label><b>User Email    
         </b>    

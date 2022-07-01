@@ -37,7 +37,7 @@ class ApplicantController extends Controller
         } 
 
       
-        return "sucessfull";
+        return redirect('/');
         //return redircet('AddApplicantPage');
     }
 
@@ -71,4 +71,7 @@ class ApplicantController extends Controller
         $data->push();
 
     }
+
+
+   
 }

@@ -15,4 +15,7 @@ class Applicant extends Model
     public function Education(){
         return $this->hasmany(Education::class);
     }
+    public function CV(){
+        return $this->hasOne(CV::class);
+    }
 }

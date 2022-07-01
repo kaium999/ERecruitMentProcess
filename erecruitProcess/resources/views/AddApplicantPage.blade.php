@@ -30,7 +30,7 @@
             <label class="w3-text-brown"><b>Enter Your Parmanent Address</b></label>
             <input class="w3-input w3-border w3-sand" name="par_address" type="text"></p>
             <p>      
-              <label class="w3-text-brown"><b>Enter Your Parmanent Address</b></label>
+              <label class="w3-text-brown"><b>Enter Your Profile Image</b></label>
               <input class="w3-input w3-border w3-sand" name="image" type="file"></p>
     <p>
     <button class="w3-btn w3-brown">Register</button></p>

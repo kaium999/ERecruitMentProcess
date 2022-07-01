@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -41,27 +50,25 @@
         <table>
             <tr>
                
-              <th>Post Title</th>
-              <th>Post Description</th>
+              <th>Applicant CV</th>
+             
               
           
             </tr>
-            @foreach ($post as $postdata)
+            @foreach ($data as $applicant)
                 
           
             <tr>
            
-              <td>{{$postdata->job_title}}</td>
-              <td>{{$postdata->job_description}}</td>
+              <td>{{$applicant->cvName}}</td>
+             
              
               
-                <td>
-                  
-                  <a href="{{"CvpageGet/".$postdata->id}}">Apply Now</a>
-                 
-                </td>
+                
             </tr>
             @endforeach
           </table>
     </body>
+</html>
+</body>
 </html>
