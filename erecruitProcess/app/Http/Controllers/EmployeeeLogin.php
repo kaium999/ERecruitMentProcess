@@ -13,7 +13,7 @@ class EmployeeeLogin extends Controller
         return view('EmployeeLogInpage');
     }
 
-    public function LogInCheck(Request $req){
+    public function LogInCheckE(Request $req){
         $obj=Employee::where('email','=',$req->email)->first();
         if($obj){
             if($obj->password==$req->password){

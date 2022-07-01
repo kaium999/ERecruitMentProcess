@@ -58,7 +58,7 @@
                 <td>
                   <a href="{{"edit/" .$post->id}}">Edit</a>
                   <a href="{{"delete/".$post->id}}">Delete</a>
-                  <a href="">Applied Applicants</a>
+                  <a href="{{"ApplyApplicantPage/".$post->id}}">Applied Applicants</a>
                 </td>
             </tr>
             @endforeach

@@ -25,6 +25,7 @@ Route::post('/edit',"App\Http\Controllers\ApplicantController@applicantUpdatePro
 /*Log In Routing*/
 Route::get('/',"App\Http\Controllers\LogIN@GetLogIn");
 Route::post('checkLogIn',"App\Http\Controllers\LogIN@LoginCheack");
+Route::get('aplogOut',"App\Http\Controllers\LogIN@apLogout");
 
 /*Add Education Routing*/
 
@@ -40,3 +41,14 @@ Route::get('jobadd',"App\Http\Controllers\JobPostController@jobAddPage");
 Route::post('jobsave',"App\Http\Controllers\JobPostController@jobsave");
 Route::get('seePostJOb',"App\Http\Controllers\JobPostController@SeeJobPost");
 Route::get('alljobsee',"App\Http\Controllers\JobPostController@AllpostShow");
+
+
+
+/*CV Routing*/
+
+Route::get('CvpageGet/{id}',"App\Http\Controllers\CvController@uploadCvpage");
+Route::post('CvpageGet',"App\Http\Controllers\CvController@uploadCv");
+
+
+/*ApplyApplicant Page Routing*/
+Route::get('ApplyApplicantPage/{id}',"App\Http\Controllers\ApplyController@ApplyApplicantSee");

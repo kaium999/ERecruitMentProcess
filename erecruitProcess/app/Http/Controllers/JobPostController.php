@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Job_post;
+use App\Models\Jobpost;
 class JobPostController extends Controller
 {
     public function jobAddPage(){
@@ -11,7 +11,7 @@ class JobPostController extends Controller
     }
 
     public function jobsave(Request $req){
-        $post=new Job_post();
+        $post=new Jobpost();
         $post->job_title=$req->jobTitle;
         $post->job_description=$req->jobdescription;
         $post->employee_id=session('logid');
@@ -21,11 +21,11 @@ class JobPostController extends Controller
     }
     public function SeeJobPost(){
         $data=session('logid');
-        $postdata=Job_post::where('employee_id',$data)->get();
+        $postdata=Jobpost::where('employee_id',$data)->get();
         return view('PostdataShow',compact('postdata'));
     }
     public function AllpostShow(){
-        $post=Job_post::all();
+        $post=Jobpost::all();
         return view('ShowAllJobPost',compact('post'));
     }
 }

@@ -45,6 +45,7 @@ li a:hover:not(.active) {
   <li><a href="#about">About</a></li>
   <li><a href="#">{{session('username')}}</a></li>
   <li><a href="{{"edit/" .session('logid')}}">Edit Profile</a></li>
+  <li><a href="aplogOut">Logout</a></li>
 
 </ul>
 

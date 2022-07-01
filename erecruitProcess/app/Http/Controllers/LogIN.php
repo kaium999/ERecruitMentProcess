@@ -30,4 +30,10 @@ class LogIN extends Controller
          return "You email are not Authentic";
         }
     }
+    public function apLogout(){
+        if(Session::has('logid')){
+            Session::pull('logid');
+            return redirect('/');
+        }
+     }
 }
